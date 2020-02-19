@@ -1,0 +1,85 @@
+#startsida {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows: 4fr 2fr 6fr;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'as s1 as' 
+}
+
+#info {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows:  2fr 10fr;
+    grid-template-areas:
+    'nv nv nv'
+    'as s2 as'
+}
+
+#arguments {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows:  2fr 10fr;
+    grid-template-areas:
+    'nv nv nv'
+    'as s3 as'
+}
+
+#recept {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows:  2fr 10fr;
+    grid-template-areas:
+    'nv nv nv'
+    'as s4 as'
+}
+
+#suggestions {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-rows:  2fr 6fr 4fr;
+    grid-template-areas:
+    'nv nv nv'
+    'as s5 as'
+    'as ft as'
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    grid-area: hd;
+    background-color: hotpink;
+}
+
+.nv {
+    grid-area: nv;
+    background-color: forestgreen;
+}
+
+.s1 {
+    grid-area: s1;
+    background-color: tomato;
+}
+
+.as {
+    grid-area: as;
+    background-color: slateblue;
+}
