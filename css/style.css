@@ -8,7 +8,7 @@
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
-    'as s1 as' 
+    'as s1 s1' ;
 }
 
 #info {
