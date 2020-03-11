@@ -1,14 +1,19 @@
 #startsida {
     display: grid;
-    height: 100vh;
+    height: 500vh;
     width: 100vw;
     background-color: white;
-    grid-template-columns: 3fr 8fr 3fr;
-    grid-template-rows: 4fr 2fr 6fr;
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr 1fr 10fr 10fr 10fr 10fr 10fr 4fr;
     grid-template-areas: 
-    'hd hd hd'
-    'nv nv nv'
-    'as s1 s1' ;
+    'hd'
+    'nv'
+    's1'
+    's2'
+    's3'
+    's4'
+    's5'
+    'ft' 
 }
 
 #info {
@@ -66,20 +71,51 @@ body {
 
 header {
     grid-area: hd;
-    background-color: hotpink;
+    background: url("../misc/Header.png") no-repeat center;
+    background-size: auto 100%;
+    box-shadow: 5px 0px 2px rgb(240, 237, 237) inset;
 }
 
 .nv {
     grid-area: nv;
-    background-color: forestgreen;
+    background-color: white;
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 11px 50px;
+    display: inline-block;
+    box-shadow: 3px 0px 2px rgb(240, 237, 237) inset;
 }
 
 .s1 {
     grid-area: s1;
-    background-color: tomato;
+    background-color: white;
+    box-shadow: 5px 0px 10px rgb(221, 220, 220) inset;
 }
 
-.as {
-    grid-area: as;
-    background-color: slateblue;
+.s2 {
+    grid-area: s2;
+    background-color: darkslategray;
+}
+
+.s3 {
+    grid-area: s3;
+    background-color: darkgreen;
+}
+
+.s4 {
+    grid-area: s4;
+    background-color: cornflowerblue;
+}
+
+.s5 {
+    grid-area: s5;
+    background-color: blueviolet;
+}
+
+footer {
+    grid-area: ft;
+    background-color: aqua 
 }
