@@ -5,7 +5,6 @@
     height: 500vh;
     width: 100vw;
     background-color: white;
-    grid-template-columns: 4fr;
     grid-template-rows: 104px 1fr 10fr 10fr 12fr 10fr 10fr 1fr;
     grid-template-areas: 
     'hd'
@@ -15,7 +14,7 @@
     's3'
     's4'
     's5'
-     'ft'
+    'ft'
 }
 
 
@@ -165,5 +164,175 @@ footer {
     box-shadow: 5px 0px 10px rgb(221, 220, 220);
 }
 
+@media screen and (min-width: 992px) {
+    #container {
+        display: grid;
+        height: 500vh;
+        width: 100vw;
+        background-color: white;
+        grid-template-columns: 4fr;
+        grid-template-rows: 4fr 1fr 10fr 10fr 10fr 10fr 10fr 2fr;
+        grid-template-areas: 
+        'hd'
+        'nv'
+        's1'
+        's2'
+        's3'
+        's4'
+        's5'
+        'ft'
+    }
+    
+    
+    body {
+        margin: 0px;
+    }
+    
+    .hd {
+        grid-area: hd;
+        background: url("../misc/Header.png") no-repeat;
+        background-size: 60%;
+        box-shadow: 5px 0px 2px rgb(240, 237, 237) inset;
+    }
+    
+    .nv {
+        grid-area: nv;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .button1 {
+        background-color: rgb(255, 255, 255);
+        border: none;
+        padding: 10px 25px;
+        display: inline-block;
+        box-shadow: 3px 0px 2px rgb(240, 237, 237) inset;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px
+    }
+    
+    #s1 {
+        grid-area: s1;
+        background-color: white;
+        margin: 1px 10px 10px 10px;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .img1 {
+        width: 90vw;
+    }
+    
+    #s2 {
+        grid-area: s2;
+        background-color: white;
+        margin: 1px 10px 10px 10px;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
 
+    h1 {
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+    
+    h3 {
+        font-size: larger;
+    }
+    
+    #s3 {
+        grid-area: s3;
+        background-color: white;
+        margin: 1px 10px 10px 10px;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .img2 {
+        height: 20vh;
+        
+    }
+    
+    ul {
+        text-align: left;
+    }
+    
+    #s4 {
+        grid-area: s4;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 3fr, 3fr, 3fr;
+        grid-template-rows:  1fr, 5fr;
+        grid-template-areas:
+        'he he he'
+        'a1 a2 a3';
+        
+    }
+    
+    .he {
+        grid-area: he;
+        margin: 1px 10px 10px 10px;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;   
+    }
+    
+    .a1 {
+        grid-area: a1;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 5px 0px 10px rgb(221, 220, 220);
+        background: url("../img/vegansk matlåda.jpg");
+        background-size: 50%;
+    }
+    
+    .a2 {
+        grid-area: a2;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 5px 0px 10px rgb(221, 220, 220);
+        background: url("../img/Fridas vegobak.jpg");
+    }
+    
+    .a3 {
+        grid-area: a3;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 5px 0px 10px rgb(221, 220, 220);
+        background: url("../img/Vegomagasinet.jpg");
+
+    }
+    
+    .button2 {
+        background-color: skyblue;
+        border: none;
+        height: 50px;
+        width: 115px;
+        border-radius: 10px;
+        display: inline-block;
+        position: absolute;
+        margin: 30px 50px 50px 110px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    #s5 {
+        grid-area: s5;
+        background-color: white;
+        margin: 1px 10px 10px 10px;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    footer {
+        grid-area: ft;
+        background-color: skyblue;
+        box-shadow: 5px 0px 10px rgb(221, 220, 220);
+    }
+     
+}
 
