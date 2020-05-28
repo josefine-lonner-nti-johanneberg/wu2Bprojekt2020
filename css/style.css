@@ -221,7 +221,8 @@ footer {
     }
     
     .img1 {
-        width: 90vw;
+        width: 80vw;
+        height: 60vh;
     }
     
     #s2 {
@@ -265,8 +266,8 @@ footer {
         grid-area: s4;
         background-color: white;
         display: grid;
-        grid-template-columns: 3fr, 3fr, 3fr;
-        grid-template-rows:  1fr, 5fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows:  1fr 2fr;
         grid-template-areas:
         'he he he'
         'a1 a2 a3';
@@ -283,16 +284,18 @@ footer {
     .a1 {
         grid-area: a1;
         padding: 10px;
-        margin: 10px 10px 10px 10px;
+        width: 450px;
+        margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
-        background: url("../img/vegansk matlåda.jpg");
-        background-size: 50%;
+        background: url("../img/vegansk matlåda.jpg") no-repeat ;
+        
     }
     
     .a2 {
         grid-area: a2;
         padding: 10px;
-        margin: 10px 10px 10px 10px;
+        width: 450px;
+        margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
         background: url("../img/Fridas vegobak.jpg");
     }
@@ -300,9 +303,11 @@ footer {
     .a3 {
         grid-area: a3;
         padding: 10px;
-        margin: 10px 10px 10px 10px;
+        width: 450px;
+        margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
-        background: url("../img/Vegomagasinet.jpg");
+        background: url("../img/Vegomagasinet.jpg") no-repeat;
+        background-size: 100%;
 
     }
     
@@ -314,7 +319,7 @@ footer {
         border-radius: 10px;
         display: inline-block;
         position: absolute;
-        margin: 30px 50px 50px 110px;
+        margin: 130px 0px 0px 160px;
         text-align: center;
         font-family: 'Raleway', sans-serif;
     }
