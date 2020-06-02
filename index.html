@@ -13,54 +13,46 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <div class="menu">
+            <ul>
+                <li>Startsida</li>
+                <li>Information</li>
+                <li>Brister</li>
+                <li>Recept</li>
+                <li>Förslag</li>
+            </ul>
+        </div>
+    
+        <div class="fade-layer" onclick="showMenu()"></div>   
+
     <div id="container">
+
         <header class="hd">
 
         </header>
 
         <nav class="nv">
 
-           <a href="#s1"> 
-               <button class="button1"> 
-                   <p> Startsida </p> 
-                </button> 
-            </a>
+                <div class="menu-button" onclick="showMenu()">
+                        <i class="material-icons">menu</i>
+                    </div>
 
-            <a href="#s2">
-                <button class="button1"> 
-                    <p> Information </p>
-                </button>
-            </a>
-
-
-            <a href="#s3">
-                <button class="button1">
-                    <p> Brister </p>
-                </button>
-            </a>
-
-            <a href="#s4">
-                <button class="button1">
-                    <p> Recept </p>
-                </button>
-            </a>
-
-            <a href="#s5">
-                <button class="button1">
-                    <p> Förslag </p>
-                </button>
-            </a>   
+           
 
         </nav>
 
         <section id="s1">
+
+            <img src="img/gif.gif" alt="Bläckfisk" class="img1">
+
             <p>Denna hemsida är designad för att hjälpa dig
             som nybörjar vegan, vegitarian eller likande då det 
             i början kan vara svårt och förvirrande. Under de 
             olika rubrikerna står det specifik information som 
             kan var viktig för att börja med vegetarisk kost. </p>
         
-            <img src="img/gif.gif" alt="Bläckfisk" class="img1">
         </section>
 
         <section id="s2">
@@ -193,6 +185,8 @@
         <footer>
 
         </footer>
+
+        <script src="js/main.js"></script>
 
     </div>
 </body>

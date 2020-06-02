@@ -17,7 +17,6 @@
     'ft'
 }
 
-
 body {
     margin: 0px;
 }
@@ -37,14 +36,44 @@ body {
     
 }
 
-.button1 {
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 5px 10px;
-    display: inline-block;
-    box-shadow: 3px 0px 2px rgb(240, 237, 237) inset;
-    font-family: 'Raleway', sans-serif;
-    font-size: 11.5px
+.menu{
+    height: 100vh;
+    width: 50vw;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: -60vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0vw;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
 }
 
 h2 {
@@ -152,10 +181,9 @@ ul {
 
 #s5 {
     grid-area: s5;
-    background-color: white;
     margin: 1px 10px 10px 10px;
     text-align: left;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;     
 }
 
 footer {
@@ -171,7 +199,7 @@ footer {
         width: 100vw;
         background-color: white;
         grid-template-columns: 4fr;
-        grid-template-rows: 4fr 1fr 10fr 10fr 10fr 10fr 10fr 2fr;
+        grid-template-rows: 4fr 1fr 6fr 8fr 8fr 6fr 10fr 2fr;
         grid-template-areas: 
         'hd'
         'nv'
@@ -198,8 +226,51 @@ footer {
         grid-area: nv;
         background-color: white;
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: row;   
+    }
+
+    .menu{
+        height: 100vh;
+        width: 20vw;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: -30vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+        background-color: white;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+    }
+    
+    .menu-button{
+        cursor: pointer;
+        display: inline;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    }
+    
+    .show{
+        left: 0vw;
+    }
+    
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible{
+        display: block;
     }
     
     .button1 {
@@ -216,13 +287,15 @@ footer {
         grid-area: s1;
         background-color: white;
         margin: 1px 10px 10px 10px;
-        text-align: left;
+        text-align: center;
         font-family: 'Raleway', sans-serif;
+        font-size: large;
     }
     
     .img1 {
         width: 80vw;
-        height: 60vh;
+        height: 50vh;
+        
     }
     
     #s2 {
@@ -231,6 +304,7 @@ footer {
         margin: 1px 10px 10px 10px;
         text-align: left;
         font-family: 'Raleway', sans-serif;
+        font-size: large;
     }
 
     h1 {
@@ -251,6 +325,7 @@ footer {
         margin: 1px 10px 10px 10px;
         text-align: left;
         font-family: 'Raleway', sans-serif;
+        font-size: large;
     }
     
     .img2 {
@@ -260,14 +335,17 @@ footer {
     
     ul {
         text-align: left;
+        font-family: 'Raleway', sans-serif;
     }
+
+    
     
     #s4 {
         grid-area: s4;
         background-color: white;
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows:  1fr 2fr;
+        grid-template-rows:  1fr 3fr;
         grid-template-areas:
         'he he he'
         'a1 a2 a3';
@@ -278,7 +356,8 @@ footer {
         grid-area: he;
         margin: 1px 10px 10px 10px;
         text-align: left;
-        font-family: 'Raleway', sans-serif;   
+        font-family: 'Raleway', sans-serif;  
+        font-size: large; 
     }
     
     .a1 {
@@ -288,7 +367,7 @@ footer {
         margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
         background: url("../img/vegansk matlåda.jpg") no-repeat ;
-        
+        font-size: large;
     }
     
     .a2 {
@@ -297,7 +376,9 @@ footer {
         width: 450px;
         margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
-        background: url("../img/Fridas vegobak.jpg");
+        background: url("../img/Fridas vegobak.jpg") no-repeat;
+        background-size: 120%;
+        font-size: large;
     }
     
     .a3 {
@@ -306,9 +387,9 @@ footer {
         width: 450px;
         margin: 10px 5px 10px 10px;
         box-shadow: 5px 0px 10px rgb(221, 220, 220);
-        background: url("../img/Vegomagasinet.jpg") no-repeat;
+        background: url("../img/Vegomagasinet.jpg");
         background-size: 100%;
-
+        font-size: large;
     }
     
     .button2 {
@@ -330,6 +411,7 @@ footer {
         margin: 1px 10px 10px 10px;
         text-align: left;
         font-family: 'Raleway', sans-serif;
+        font-size: medium;
     }
     
     footer {
