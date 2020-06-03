@@ -1,5 +1,4 @@
 
-
 #container {
     display: grid;
     height: 500vh;
@@ -126,7 +125,7 @@ ul {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  100px, 150px, 150px, 150px;
+    grid-template-rows:  100px 150px 150px 150px;
     grid-template-areas:
     'he'
     'a1'
@@ -199,7 +198,7 @@ footer {
         width: 100vw;
         background-color: white;
         grid-template-columns: 4fr;
-        grid-template-rows: 4fr 1fr 6fr 8fr 8fr 6fr 10fr 2fr;
+        grid-template-rows: 3fr 1fr 6fr 6fr 6fr 6fr 6fr 2fr;
         grid-template-areas: 
         'hd'
         'nv'
@@ -218,7 +217,7 @@ footer {
     .hd {
         grid-area: hd;
         background: url("../misc/Header.png") no-repeat;
-        background-size: 60%;
+        background-size: 80%;
         box-shadow: 5px 0px 2px rgb(240, 237, 237) inset;
     }
     
@@ -248,10 +247,12 @@ footer {
     .menu-button{
         cursor: pointer;
         display: inline;
+        padding: 10px;
     }
     
     .menu-button i.material-icons{
         font-size: 2.5rem;
+
     }
     
     .show{
@@ -286,7 +287,7 @@ footer {
     #s1 {
         grid-area: s1;
         background-color: white;
-        margin: 1px 10px 10px 10px;
+        margin: 20px 10px 10px 10px;
         text-align: center;
         font-family: 'Raleway', sans-serif;
         font-size: large;
@@ -409,9 +410,9 @@ footer {
         grid-area: s5;
         background-color: white;
         margin: 1px 10px 10px 10px;
-        text-align: left;
-        font-family: 'Raleway', sans-serif;
-        font-size: medium;
+        text-align: inherit;
+        font-family: inherit;
+        font-size: inherit;
     }
     
     footer {
